@@ -7,8 +7,8 @@
 INT GetOSVersion(VOID)
 {
 	PPEB Peb = (PPEB)GetPeb();
-    UINT OSMajorVersion = Peb->OSMajorVersion;
-    UINT OSMinorVersion = Peb->OSMinorVersion;
+    	UINT OSMajorVersion = Peb->OSMajorVersion;
+    	UINT OSMinorVersion = Peb->OSMinorVersion;
 
 	if (OSMajorVersion == 5 && !OSMinorVersion || OSMajorVersion < 5)
 	{
